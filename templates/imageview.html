@@ -25,10 +25,10 @@
   </nav>
 
   <div class="row">
-    <div class="col-md-6">
-      <img src="{{ url_for('static', filename='images/'+data.name+'.jpg') }}" class="img-responsive center-block" alt="">
+    <div class="col-md-8">
+      <img src="{{ url_for('download_file', filename=data.name) }}" class="img-responsive center-block" alt="">
     </div>
-    <div class="col-md-6">
+    <div class="col-md-4">
       <h2>{{data.name}}</h2>
       {% include 'table.html' %}
     </div>
